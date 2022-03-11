@@ -147,26 +147,49 @@ img{
     position: fixed;
     top: var(--header-height);
     left: -100%;
-    width: 70%;
-    height: 100vh;
+    width: 40%;
+    height: 50vh;
     padding: 2rem;
-    background-color: var(--white-color);
+    background-color: var(--dark-color-lighten);
     transition: .5s;
+    border-radius: .2rem;
   }
 }
 
 .nav__item{
   margin-bottom: var(--mb-4);
+  
 }
 
 .nav__logo{
   font-weight: var(--font-semi-bold);
 }
 
-.nav__toggle,
+.nav__link{
+  font-size: var(--font-semi-bold);
+}
+
+.nav__toggle{
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: rgb(4, 169, 106);
+  
+}
+
 .nav__shop{
   font-size: 1.3rem;
   cursor: pointer;
+  color: rgb(4, 225, 140);
+}
+
+.nav__shop{
+  animation: parpadear 2s infinite backwards;
+}
+
+@keyframes parpadear {
+  to {
+    color: rgb(4, 169, 106);
+  }
 }
 
 /*Show menu*/
@@ -520,6 +543,7 @@ img{
 /*===== NEW COLLECTION  =====*/
 .new__container{
   row-gap: 2rem;
+  
 }
 
 .new__mens{
