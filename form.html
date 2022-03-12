@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon-16x16.png" type="image/x-icon">
+    <title>Formulario</title>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bxs-grid'></i>
+            </div>
+
+            <a href="#" class="nav__logo">Zaky Up</a>
+
+            <div class="nav__menu nav-menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/index.html#container" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="/index.html#featured" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="/index.html#women" class="nav__link">Damas</a></li>
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Nuevo</a></li>
+                    <li class="nav__item"><a href="/shop.html" class="nav__link">Compras</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__shop">
+                <i class='bx bx-shopping-bag'></i>
+                
+            
+            </div>
+        </nav>
+    </header>
+
+
+<!-- ====== TARJETA ======= -->
+<div class="space">
+    <div class="contenedor">
+
+        <!-- Tarjeta -->
+        <section class="tarjeta" id="tarjeta">
+            <div class="delantera">
+                <div class="logo-marca" id="logo-marca">
+                    <img src="/assets/img/bg-tarjeta/mastercard.png" alt="">
+                </div>
+                <img src="/assets/img/bg-tarjeta/chip-tarjeta.png" class="chip" alt="">
+                <div class="datos">
+                    <div class="grupo" id="numero">
+                        <p class="label">Número Tarjeta</p>
+                        <p class="numero">#### #### #### ####</p>
+                    </div>
+                    <div class="flexbox">
+                        <div class="grupo" id="nombre">
+                            <p class="label">Nombre Tarjeta</p>
+                            <p class="nombre">Jhon Doe</p>
+                        </div>
+    
+                        <div class="grupo" id="expiracion">
+                            <p class="label">Expiracion</p>
+                            <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="trasera">
+                <div class="barra-magnetica"></div>
+                <div class="datos">
+                    <div class="grupo" id="firma">
+                        <p class="label">Firma</p>
+                        <div class="firma"><p></p></div>
+                    </div>
+                    <div class="grupo" id="ccv">
+                        <p class="label">CCV</p>
+                        <p class="ccv"></p>
+                    </div>
+                </div>
+                <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+                <a href="#" class="link-banco">www.tubanco.com</a>
+            </div>
+        </section>
+    
+        <!-- Contenedor Boton Abrir Formulario -->
+        <div class="contenedor-btn">
+            <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+                <i class='bx bx-window-open'></i>
+            </button>
+        </div>
+    
+        <!-- Formulario -->
+        <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+            <div class="grupo">
+                <label for="inputNumero">Número Tarjeta</label>
+                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+            </div>
+            <div class="grupo">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+            </div>
+            <div class="flexbox">
+                <div class="grupo expira">
+                    <label for="selectMes">Expiracion</label>
+                    <div class="flexbox">
+                        <div class="grupo-select">
+                            <select name="mes" id="selectMes">
+                                <option disabled selected>Mes</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="grupo-select">
+                            <select name="year" id="selectYear">
+                                <option disabled selected>Año</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="grupo ccv">
+                    <label for="inputCCV">CCV</label>
+                    <input type="text" id="inputCCV" maxlength="3">
+                </div>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+</div>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
