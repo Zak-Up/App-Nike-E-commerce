@@ -162,7 +162,7 @@ img{
 }
 
 .nav__logo{
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-bold);
 }
 
 .nav__link{
@@ -210,7 +210,7 @@ img{
   width: 4px;
   height: 4px;
   background-color: var(--dark-color);
-  border-radius: 50%s;
+  border-radius: 50%;
 }
 
 /*Change color header*/
