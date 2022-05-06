@@ -131,7 +131,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
 }
 
 /*===== NAV =====*/
@@ -150,7 +150,7 @@ img{
     width: 40%;
     height: 50vh;
     padding: 2rem;
-    background-color: var(--dark-color-lighten);
+    background: linear-gradient(135deg, #0d2d42, #23032f);
     transition: .5s;
     border-radius: .2rem;
   }
@@ -165,6 +165,10 @@ img{
   font-weight: var(--font-bold);
 }
 
+.nav__logo h1{
+  color: var(--dark-color-lighten)
+}
+
 .nav__link{
   font-size: var(--font-semi-bold);
 }
@@ -172,23 +176,24 @@ img{
 .nav__toggle{
   font-size: 1.3rem;
   cursor: pointer;
-  color: rgb(4, 169, 106);
+  color: #F2A20C;
   
 }
 
 .nav__shop{
   font-size: 1.3rem;
   cursor: pointer;
-  color: rgb(4, 225, 140);
+  color: #F2A20C;
+  animation: parpadear 2s infinite backwards;
 }
 
-.nav__shop{
-  animation: parpadear 2s infinite backwards;
+.nav__menu a{
+  color: var(--dark-color-lighten)
 }
 
 @keyframes parpadear {
   to {
-    color: rgb(4, 169, 106);
+    color: #fde3b3;
   }
 }
 
@@ -274,23 +279,24 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
+  /* background: linear-gradient(135deg, #613f01, #F2A20C); */
 }
 
 .card {
   width: 320px;
   height: 400px;
-  background-color: var(--dark-color);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
   border-radius: 1rem;
   padding: 4rem 2rem 0;
-  color: var(--white-color);
+  color: var(--five-color);
   overflow-y: hidden;
 }
 
 .card__img {
   position: absolute;
   width: 260px;
-  filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.92));
 }
 
 .card__data {
@@ -298,9 +304,13 @@ img{
   text-align: center;
 }
 
+.card__data h1{
+  color: #F2A20C;
+}
+
 .card__title {
   font-size: var(--h1-font-size);
-  color: var(--first-color);
+  color: var(--five-color);
   margin-bottom: .5rem;
 }
 
@@ -322,7 +332,7 @@ img{
   display: block;
   width: max-content;
   padding: 1.125rem 2rem;
-  background-color: var(--first-color);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
   color: var(--white-color);
   border-radius: .5rem;
   font-weight: 600;
@@ -368,7 +378,7 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--dark-color);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
   color: var(--white-color);
   padding: 1.125rem 2rem;
   font-weight: var(--font-medium);
@@ -411,7 +421,7 @@ img{
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
   border-radius: .5rem;
   transition: .3s;
 }
@@ -419,7 +429,7 @@ img{
 .sneaker__sale{
   position: absolute;
   left: .5rem;
-  background-color: var(--dark-color);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
   color: var(--white-color);
   padding: .25rem .5rem;
   border-radius: .25rem;
@@ -479,7 +489,7 @@ img{
   position: relative;
   display: flex;
   height: 328px;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
   padding: 2rem;
   border-radius: .5rem;
   transition: .3s;
@@ -519,7 +529,7 @@ img{
 .offer__container{
   grid-template-columns: 55% 45%;
   column-gap: 0;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
   border-radius: .5rem;
   justify-content: center;
 }
@@ -550,7 +560,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
   border-radius: .5rem;
   padding: 2rem;
 }
@@ -579,7 +589,7 @@ img{
 .new__sneaker-card{
   position: relative;
   padding: 3.5rem 1.5rem;
-  background-color: var(--dark-color-lighten);
+  background: linear-gradient(to top, #D5D5D5 , #FCFCFC );
   border-radius: .5rem;
   overflow: hidden;
   display: flex;
@@ -609,7 +619,7 @@ img{
 
 /*===== NEWSLETTER =====*/
 .newsletter__container{
-  background-color: var(--dark-color);
+  background: linear-gradient(135deg, #0d2d42, #23032f);
   color: var(--white-color);
   padding: 2rem .5rem;
   border-radius: .5rem;
@@ -733,6 +743,7 @@ img{
 	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
 	background-size: cover;
 }
+
 
 .delantera .logo-marca {
 	text-align: right;
@@ -961,17 +972,26 @@ img{
 	padding: 10px;
 	font-size: 22px;
 	color: #fff;
-	background: #000000;
+  background: linear-gradient(135deg, #0d2d42, #23032f);
 	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
 	cursor: pointer;
 }
 
 .formulario-tarjeta .btn-enviar:hover {
-	background: rgb(4, 169, 106);
+  background: linear-gradient(155deg, #0d2d42, #0d2d42);
+}
+
+.footer__container h3{
+  color:#F2A20C;
 }
 
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 300px){
+  .card__data span, p{
+    color: #fff;
+  }
+}
 @media screen and (min-width: 576px){
   .collection__container{
     grid-template-columns: 415px;
@@ -991,6 +1011,9 @@ img{
 
   .new__mens{
     align-items: center;
+  }
+  .card__data span, p{
+    color: #fff;
   }
 }
 
@@ -1040,7 +1063,7 @@ img{
     background-color: var(--dark-color);
     border-radius: 1rem;
     padding: 7rem 4rem 0;
-    color: var(--white-color);
+    color: #fff;
     overflow-y: hidden;
   }
   
@@ -1058,7 +1081,7 @@ img{
   
   .card__title {
     font-size: var(--bigger-font-size);
-    color: var(--first-color);
+    color: #fff;
     margin-bottom: .5rem;
   }
   
@@ -1106,4 +1129,18 @@ img{
     justify-content: flex-end;
     padding: 4rem 2rem;
   }
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(22, 2, 50);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(6, 2, 37);
 }
